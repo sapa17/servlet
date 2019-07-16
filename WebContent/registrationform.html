@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css"
+	href="CSSFiles/registrationform.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="CSSFiles/searchform.css">
+ --><script type="text/javascript" src="JSFiles/registration.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+	<form id="registration" action="Servelet1" method="get">
+		<h2>EMPLOYEE REGISTRATION</h2>
+
+		<table align="center" cellpadding="10">
+			<tr>
+				<td><p>EMPLOYEE ID:</p></td>
+				<td><input type="text" id=empID name="employeeID" onkeypress="ClearForm()"
+					placeholder="Enter Your ID"><div id="info"></div></td>
+			</tr>
+			<tr>
+				<td><p>EMPLOYEE NAME:</p></td>
+				<td><input type="text" id=empName name="employeeName" onkeypress="ClearForm()"
+					placeholder="Enter Your name"></td>
+			</tr>
+			<tr>
+				<td><p>EMPLOYEE SALARY:</p></td>
+				<td><input type="number" id=empSalary name="employeeSalary" onkeypress="ClearForm()"
+					placeholder="Enter Your salary"></td>
+			</tr>
+			<tr>
+			<tr>
+				<td><p>MOBILE NUMBER:</p></td>
+				<td><input type="number" id=empMobile name="employeeMobile" onkeypress="ClearForm()"
+					pattern="[789][0-9]{9}" placeholder="Enter Your Mobile Number"></td>
+			</tr>
+			<td>
+				<p></>ADDRESS</p>
+			</td>
+			<td><textarea id="empAddress" rows="4" cols="50" type="text" onkeypress="ClearForm()"
+					class="address" name="employeeAddress" placeholder="Fill Your Address"></textarea></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="reset" class="button">Reset</button>
+				</td>
+
+				<td><button type="submit" class="button" id="register" onclick="return validateForm()">Register</button></td>
+			</tr>
+			<br>
+
+		</table>
+	</form>
+	
+	<form id="search" class="example" action="ViewServlet" method="get" style="margin:auto;max-width:300px">
+  <input type="text" name="employeeID" placeholder="Search employee with ID"  name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<form  action="PrintAllServlet" method="get" style="margin:auto;max-width:300px">
+<button type="submit"  id="printall" >Print All Employee Data</button>
+</form>
+
+	<div  id="errorMessages"></div>
+</body>
+</html>
+

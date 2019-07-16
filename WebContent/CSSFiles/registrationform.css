@@ -1,0 +1,98 @@
+input[type=text], select {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=number], select {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+
+.button {
+  width: 80%;
+	background-color: #3498db;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: orange;
+}
+body{
+ background: #3498db;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h2{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black;
+  text-align: center; 
+  text-decoration: underline
+}
+#errorMessages {
+	width: 480px;
+	margin: 2em auto;
+	background-color: #ecf0f1;
+	overflow: hidden;
+	
+	
+}
+
+#errorMessages li {
+	padding: 1em;
+	background-color: #e74c3c;
+	color: #ecf0f1;
+	font-weight: 400;
+	margin: 0 1em;
+	margin-bottom: 1em;
+}
+
+#errorMessages li:first-child {
+	margin-top: 1em;
+}
+.address {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+#registration {
+	border-radius: 10px;
+	width: 480px;
+	margin: 2em auto;
+	background-color: #ecf0f1;
+	overflow: hidden;
+}
+p {
+	padding: 0.5em 0;
+	font-family: "Times New Roman", Times, serif;
+}
+p:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
